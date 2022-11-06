@@ -11,6 +11,7 @@ import Error from "pages/error/Error";
 function App() {
   return (
     <BrowserRouter>
+      <GlobalStyle />
       <Routes>
         <Route path={Path.Home} element={<Home />} />
         <Route path={Path.About} element={<About />} />
