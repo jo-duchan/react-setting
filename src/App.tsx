@@ -8,10 +8,14 @@ import Home from "pages/home/Home";
 import About from "pages/about/About";
 import Error from "pages/error/Error";
 
+// Components
+import Header from "components/common/Header";
+
 function App() {
   return (
     <BrowserRouter>
       <GlobalStyle />
+      <Header />
       <Routes>
         <Route path={Path.Home} element={<Home />} />
         <Route path={Path.About} element={<About />} />
